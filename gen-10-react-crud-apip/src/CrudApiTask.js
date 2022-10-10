@@ -16,10 +16,10 @@ export default function CrudApiTask () {
         .then((res) => {
             setWilayah(res.data)
         })
-        .catch(error => {
-            console.log(error) 
-            alert ('Proses Data Bermasalah')
-        })
+        // .catch(error => {
+        //     console.log(error) 
+        //     alert ('Proses Data Bermasalah')
+        // })
     }
 
     function tambahWilayah () {
@@ -27,10 +27,10 @@ export default function CrudApiTask () {
         .then(() => {
             getListWilayah()
         })
-        .catch(error => {
-            console.log(error) 
-            alert ('Proses Data Bermasalah')
-        })
+        // .catch(error => {
+        //     console.log(error) 
+        //     alert ('Proses Data Bermasalah')
+        // })
     }
     
     function updateWilayah () {
@@ -38,10 +38,10 @@ export default function CrudApiTask () {
         .then(() => {
             getListWilayah()
         })
-        .catch(error => {
-            console.log(error) 
-            alert ('Proses Data Bermasalah')
-        })
+        // .catch(error => {
+        //     console.log(error) 
+        //     alert ('Proses Data Bermasalah')
+        // })
     }
 
     function deleteWilayah (wilayahId) {
@@ -49,10 +49,10 @@ export default function CrudApiTask () {
         .then(() => {
             getListWilayah()
         })
-        .catch(error => {
-            console.log(error) 
-            alert (error.message)
-        })
+        // .catch(error => {
+        //     console.log(error) 
+        //     alert (error.message)
+        // })
     }
 
     function handleSubmit (event) {
